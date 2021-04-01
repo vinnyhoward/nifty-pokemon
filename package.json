@@ -1,0 +1,22 @@
+{
+  "name": "nifty-pokemon",
+  "version": "1.0.0",
+  "description": "A small web app that allows you to purchase pokemon NFTs using Ethereum and Metamask",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "test": "yarn test",
+    "build:prod": "NODE_ENV=production webpack --watch",
+    "build:dev": "webpack --watch"
+  },
+  "author": "Vincent Howard",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {}
+}
