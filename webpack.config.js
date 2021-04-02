@@ -3,7 +3,10 @@ const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development
 
 module.exports = {
     mode,
-    entry: './src/index.js',
+    entry: './src/index.ts',
+    resolve: {
+        extensions: ['.ts', '.js']
+    },
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'public'),
@@ -15,11 +18,11 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.ts$/,
                 exclude: /node_modules/,
                 use: {
                     // without additional settings, this will reference babel.rc
-                    loader: 'babel-loader',
+                    loader: 'ts-loader',
                 }
             }
         ]
