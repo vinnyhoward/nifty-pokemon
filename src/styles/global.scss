@@ -1,5 +1,11 @@
+:root {
+    --dankPurple: purple;
+}
+
 $light-pink: salmon;
 
 div {
     color: $light-pink;
+    background-color: var(--dankPurple);
+    display: flex;
 }

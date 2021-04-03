@@ -18,8 +18,7 @@ module.exports = {
         contentBase: './public',
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.ts$/,
                 exclude: /node_modules/,
                 use: {
@@ -28,12 +27,14 @@ module.exports = {
             },
             {
                 test: /\.(s[ac]|c)ss$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader', 'postcss-loader']
             }
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({ title: 'Nifty Pokemon' }),
+        new HtmlWebpackPlugin({
+            title: 'Nifty Pokemon'
+        }),
         new MiniCssExtractPlugin()
     ],
 }
