@@ -11,7 +11,7 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'public'),
     },
-    devtool: 'source-map',
+    devtool: 'inline-source-map',
     devServer: {
         contentBase: './public',
     },
@@ -22,7 +22,7 @@ module.exports = {
                 exclude: /node_modules/,
                 use: {
                     // without additional settings, this will reference babel.rc
-                    loader: 'ts-loader',
+                    loader: 'babel-loader',
                 }
             }
         ]
