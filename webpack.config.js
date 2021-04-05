@@ -38,3 +38,14 @@ module.exports = {
         new MiniCssExtractPlugin()
     ],
 }
+// {
+//     "parser": "@typescript-eslint/parser",
+//     "parserOptions": {
+//         "ecmaVersion": 2020
+//     },
+//     "extends": [
+//         "plugin:@typescript-eslint/recommended",
+//         "plugin:prettier/recommended",
+//         "prettier/@typescript-eslint"
+//     ]
+// }
