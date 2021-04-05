@@ -14,11 +14,15 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.13.13",
+    "@babel/plugin-proposal-decorators": "^7.13.5",
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-typescript": "^7.13.0",
     "@typescript-eslint/eslint-plugin": "^4.20.0",
     "@typescript-eslint/parser": "^4.20.0",
+    "@webcomponents/webcomponentsjs": "^2.5.0",
     "babel-loader": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "copy-webpack-plugin": "^8.1.0",
     "css-loader": "^5.2.0",
     "eslint": "^7.23.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -40,5 +44,7 @@
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lit-element": "^2.4.0"
+  }
 }
